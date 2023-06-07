@@ -1,32 +1,4 @@
-@font-face {
-    font-family: 'Groupe Medium';
-    src: url(fonts/GroupeMedium.ttf) format('ttf');
-}
 
-@font-face {
-    font-family: 'Kovacs Gradient';
-    src: url(Fonts/KovacsGradient.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'Kovacs Laser';
-    src: url(Fonts/KovacsLaser.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'Realpolitik';
-    src: url(Fonts/Realpolitik.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'RealpolitikBold';
-    src: url(Fonts/RealpolitikBold.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'RealpolitikSemiBold';
-    src: url(Fonts/RealpolitikSemiBold.ttf) format('ttf');
-}
 
 body {
     margin: 0;
@@ -245,8 +217,10 @@ footer{
 .bottom-box span {
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;
-    font-family: "Groupe Medium", "Noto Sans JP";
+    font-size: 2rem;
+    font-family: "Prompt", "Noto Sans JP";
+    font-weight: bold;
+    text-transform: uppercase;
     color: rgb(171, 255, 248);
     text-shadow: 0px 0px 30px #14e9f8;
     background-color: #0e154f;
