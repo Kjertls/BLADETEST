@@ -5,27 +5,27 @@
 
 @font-face {
     font-family: 'Kovacs Gradient';
-    src: url(Fonts/KovacsGradient.otf) format('otf');
+    src: url(../BLADETEST/Fonts/KovacsGradient.otf) format('otf');
 }
 
 @font-face {
     font-family: 'Kovacs Laser';
-    src: url(Fonts/KovacsLaser.otf) format('otf');
+    src: url(../BLADETEST/Fonts/KovacsLaser.otf) format('otf');
 }
 
 @font-face {
     font-family: 'Realpolitik';
-    src: url(Fonts/Realpolitik.otf) format('otf');
+    src: url(../BLADETEST/Fonts/Realpolitik.otf) format('otf');
 }
 
 @font-face {
     font-family: 'RealpolitikBold';
-    src: url(Fonts/RealpolitikBold.otf) format('otf');
+    src: url(../BLADETEST/Fonts/RealpolitikBold.otf) format('otf');
 }
 
 @font-face {
     font-family: 'RealpolitikSemiBold';
-    src: url(Fonts/RealpolitikSemiBold.otf) format('otf');
+    src: url(../BLADETEST/Fonts/RealpolitikSemiBold.otf) format('otf');
 }
 
 body {
