@@ -76,7 +76,7 @@ header {
     padding-top: 1%;
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Groupe Medium';
+    font-family: 'Audiowide';
     color: rgb(171, 255, 248);
     text-shadow: 0px 0px 30px #14e9f8;
     background-color: #0e154f;
@@ -96,7 +96,7 @@ header {
 
 .navigation ul li {
     list-style-type: none;
-    font-family: "Groupe Medium";
+    font-family: "Bruno Ace SC";
     font-size: 1.5rem;
     padding: 10%;
     color: rgb(255, 222, 73);
@@ -174,13 +174,15 @@ header {
     text-shadow: 0px 0px 30px #f81414;
     font-weight: normal;
     font-size: 8rem;
-
+    font-family: "Zen Dots";
+    text-transform: uppercase;
+    mix-blend-mode: lighten;
 
 }
 
 .content p {
     color: rgb(171, 255, 248);
-    font-family: 'Realpolitik';
+    font-family: 'Bruno Ace SC';
     font-size: 2rem;
     text-shadow: 0px 0px 30px #14e9f8;
 
@@ -217,7 +219,7 @@ footer{
 .bottom-box span {
     padding: 0;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: "Prompt", "Noto Sans JP";
     font-weight: bold;
     text-transform: uppercase;
