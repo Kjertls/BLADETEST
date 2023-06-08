@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Kovacs Gradient';
-    src: url(../BLADETEST/Fonts/KovacsGradient.otf) format('opentype');
+    src: url(../BLADETEST/Fonts/KovacsGradient.svg) format('svg');
 }
 
 @font-face {
