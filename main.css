@@ -1,31 +1,37 @@
 @font-face {
     font-family: 'Groupe Medium';
-    src: url(../Bladerunner_Test/Fonts/GroupeMedium.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/GroupeMedium.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/GroupeMedium.svg#GROUPE-MEDIUM) format('svg');
 }
 
 @font-face {
     font-family: 'Kovacs Gradient';
-    src: url(../BLADETEST/Fonts/KovacsGradient.svg) format('svg');
+    src: url(../BladerunnerComplete/Fonts/KovacsGradient.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/KovacsGradient.svg) format('svg');
 }
 
 @font-face {
     font-family: 'Kovacs Laser';
-    src: url(../Bladerunner_Test/Fonts/KovacsLaser.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/KovacsLaser.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/KovacsLaser.svg) format('svg');
 }
 
 @font-face {
     font-family: 'Realpolitik';
-    src: url(../Bladerunner_Test/Fonts/Realpolitik.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/Realpolitik.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/Realpolitik.svg) format('svg');
 }
 
 @font-face {
     font-family: 'RealpolitikBold';
-    src: url(../Bladerunner_Test/Fonts/RealpolitikBold.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/RealpolitikBold.woff2) format('woff2');
+    src: url(../BladerunnerComplete/Fonts/RealpolitikBold.svg) format('svg');
 }
 
 @font-face {
     font-family: 'RealpolitikSemiBold';
-    src: url(../Bladerunner_Test/Fonts/RealpolitikSemiBold.woff2) format('woff2');
+    src: url(../BladerunnerComplete/RealpolitikSemiBold.woff2) format('woff2');
+    src: url(../BladerunnerComplete/RealpolitikSemiBold.svg) format('svg');
 }
 
 /*___________________________________*/
@@ -42,7 +48,7 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background-image: url('Images/Backdrop.png');
+    background-image: url('../BladerunnerComplete/Images/Backdrop.png');
 
 }
 
@@ -121,8 +127,8 @@ body {
     height: 100vh;
     width: calc((100vw / 40) * 7);
     position: fixed;
-    top: 0;
-    left: calc(100vw / 40);
+    top: calc(100vh / 18.5);
+    left: calc(100vw / 20);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -139,53 +145,53 @@ body {
     mix-blend-mode: normal;
     margin-top: calc((100vh / 11) * 0.5);
     padding-top: 0px;
+    padding-bottom: 0;
+    margin: 0;
     height: calc((100vh / 11) * 2.5);
+    
 }
 
 .vid-content iframe {
     mix-blend-mode: normal;
     text-decoration: none;
     border: 0;
-
-
-    margin: 0px;
-    padding: 0px;
-    background-color: #0e154f;
-}
-
-iframe {
-    width: calc((100vw / 40) * 6);
+    
+    width: calc((100vw / 35) * 5);
     height: calc((100vh / 11) * 1.6);
+    margin-bottom: 1vh;
 }
+
 
 #timer {
     height: 1vh;
-    padding-top: 1%;
+    
     font-size: 1.5rem;
     text-align: center;
     font-family: 'Groupe Medium';
     color: rgb(171, 255, 248);
     text-shadow: 0px 0px 30px #14e9f8;
-    background-color: #0e154f;
+    
 }
 
 .navigation {
     /*margin-top: 20%;*/
     color: rgb(171, 255, 248);
     text-shadow: 0px 0px 30px #14e9f8;
-    background-color: #0e154f;
-    height: calc((100vh / 11) * 6);
+    
+    height: calc((100vh / 11) * 6.3);
 }
 
 .navigation ul {
     margin: 0;
     padding: 0;
+    background-color: #0e154f;
+    height: 100%;
 }
 
 .navigation ul li {
     list-style-type: none;
     font-family: "Groupe Medium";
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10%;
     color: rgb(255, 222, 73);
     text-shadow: 0px 0px 30px #f81414;
@@ -201,20 +207,20 @@ iframe {
 
 footer {
     mix-blend-mode: lighten;
-    height: 8vh;
+    height: 5.5vh;
     position: sticky;
     bottom: 8vh;
     left: 0;
 }
 
 .bottom-box {
-    height: 0.5vh;
+    height: 40%;
 
-    width: 85%;
-    margin-top: 3vh;
+    width: 87.5%;
+    
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3vh;
+    margin-right: 7.5vw;
+   
     color: white;
     display: flex;
     align-items: center;
@@ -223,11 +229,10 @@ footer {
 .bottom-box span {
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Groupe Medium", "Noto Sans JP";
     color: rgb(171, 255, 248);
     text-shadow: 0px 0px 30px #14e9f8;
-    background-color: #0e154f;
 }
 
 
@@ -323,19 +328,29 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    mix-blend-mode: lighten;
+    
     /*height: 60%;*/
+    mix-blend-mode: normal;
+}
+
+.image-content img{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    
 }
 
 .text-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     mix-blend-mode: lighten;
     /*height: 10vh;*/
     color: white;
     font-size: 2rem;
+    
+    /*height: 90%; !! HINZUGEFÜGT, CHECKEN OB SACHEN KAPUTTGEHEN*/
 
 }
 
@@ -345,7 +360,7 @@ header {
     color: rgb(255, 222, 73);
     text-shadow: 0px 0px 30px #f81414;
     font-weight: normal;
-    font-size: 7rem;
+    font-size: 4.4rem;
     width: 77%;
 
 }
@@ -353,15 +368,33 @@ header {
 p {
     color: rgb(171, 255, 248);
     font-family: 'Realpolitik';
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
     text-shadow: 0px 0px 30px #14e9f8;
     background-color: #0e154f;
+    width: 50%;
+    height:100%;
+    
+    padding-bottom: 8vh;
 }
 
 .borderimg {
     border: 50px solid transparent;
     padding: 0px;
-    border-image: url(Images/Border/BorderImg.png) 200 round;
+    border-image: url(Images/Border/BorderSide1.png) 200 round;
+    mix-blend-mode: lighten;
+}
+
+.bordervid1 {
+    border: 50px solid transparent;
+    padding: 0px;
+    border-image: url(Images/Border/BorderVid_copy.png) 200 round;
+    mix-blend-mode: lighten;
+}
+.bordervid2 {
+    border: 50px solid transparent;
+    padding: 0px;
+    border-image: url(Images/Border/BorderVid2.png) 200 round;
     mix-blend-mode: lighten;
 }
 
@@ -375,27 +408,29 @@ p {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(40, [col-start] 1fr);
-    grid-template-rows: repeat(11, [row-start] 1fr);
+    grid-template-rows: repeat(22, [row-start] 1fr);
 
     gap: 0;
     width: 100vw;
     height: 100vh;
+    
 }
 
 .itemtitel {
-    grid-column: col-start 10 / span 30;
-    grid-row: row-start 1 / span 2;
+    grid-column: col-start 11 / span 28;
+    grid-row: row-start 2 / span 2;
 }
 
 .itemimg {
-    grid-column: col-start 10 / span 30;
-    grid-row: row-start 3 / span 5;
+    grid-column: col-start 10 / span 28;
+    grid-row: row-start 4 / span 13;
 }
 
 .itemtext {
-    grid-column: col-start 10 / span 30;
-    grid-row: row-start 8 / span 2;
+    grid-column: col-start 10 / span 28;
+    grid-row: row-start 17 / span 3;
 }
+
 
 /*___________________________________*/
 
@@ -408,18 +443,19 @@ p {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
+    display: none;
     transition: all 1.7s ease;
     z-index: 1;
     justify-content: center;
+    
 }
 
 .popup {
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: rgba(1, 1, 0, 1);
     margin: 100px auto;
+    
 }
 
 .popup-timer {
@@ -430,6 +466,8 @@ p {
     right: 10px;
     line-height: 25px;
     padding: 0px 10px;
+    right: -14px;
+    top: -35px;
 }
 
 .btn-close {
@@ -439,8 +477,8 @@ p {
     text-align: center;
     line-height: 22px;
     position: absolute;
-    right: -10px;
-    top: -10px;
+    right: -36px;
+    top: -37px;
     cursor: pointer;
     transition: all 0.5s ease;
     border-radius: 50%;
@@ -448,4 +486,21 @@ p {
 
 .btn-close:hover {
     transform: rotate(360deg);
+}
+
+.adimg {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.adborderimg {
+    border: 50px solid transparent;
+    padding: 0px;
+    border-image: url(Images/Border/AdBorder.png) 200 round;
+    mix-blend-mode: lighten;
 }

@@ -28,13 +28,13 @@ function startTimer() {
     return time < 10 ? '0' + time : time;
   }
 }
-
+/*
 $(document).ready(function(){
 
   $(window).load(function(){
       $duration = 10;
       $('.seconds').text($duration);
-      $('.popup-wrap').fadeIn(1500);
+      $('.popup-wrap').fadeIn(3000); //STARTET DEN TIMER NACH 3 SEKUNDEN
 
       $myTimer = setInterval(function(){ startTimer() }, 1000);
       $('.popup .btn-close').on("click",function(){
@@ -51,4 +51,35 @@ $(document).ready(function(){
           }
       }
   });
-});
+}); */
+
+
+$(document).ready(function () {
+
+  $(window).on('load', function () {
+      setTimeout(() => {
+          $duration = 30;
+          console.log("popup")
+          $('.seconds').text($duration);
+          $('.popup-wrap').css("display", "flex")
+              .hide()
+              .show();
+
+          $myTimer = setInterval(function () { startTimer() }, 1000);
+          $('.popup .btn-close').on("click", function () {
+              clearInterval($myTimer);
+              $('.popup-wrap').fadeOut(500);
+          });
+
+          function startTimer() {
+              $duration--;
+              $('.seconds').text($duration);
+              if ($duration == 0) {
+                  clearInterval($myTimer);
+                  $('.popup-wrap').fadeOut(500);
+              }
+          }
+      }, 3000);
+
+  });
+}); 
