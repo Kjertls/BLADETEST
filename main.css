@@ -1,37 +1,37 @@
 @font-face {
     font-family: 'Groupe Medium';
-    src: url(../BladerunnerComplete/Fonts/GroupeMedium.woff2) format('woff2');
-    src: url(../BladerunnerComplete/Fonts/GroupeMedium.svg#GROUPE-MEDIUM) format('svg');
+    src: url(../BLADETEST/Fonts/GroupeMedium.woff2) format('woff2');
+    src: url(../BLADETEST/Fonts/GroupeMedium.svg#GROUPE-MEDIUM) format('svg');
 }
 
 @font-face {
     font-family: 'Kovacs Gradient';
-    src: url(../BladerunnerComplete/Fonts/KovacsGradient.woff2) format('woff2');
-    src: url(../BladerunnerComplete/Fonts/KovacsGradient.svg) format('svg');
+    src: url(../BLADETEST/Fonts/KovacsGradient.woff2) format('woff2');
+    src: url(../BLADETEST/Fonts/KovacsGradient.svg) format('svg');
 }
 
 @font-face {
     font-family: 'Kovacs Laser';
-    src: url(../BladerunnerComplete/Fonts/KovacsLaser.woff2) format('woff2');
-    src: url(../BladerunnerComplete/Fonts/KovacsLaser.svg) format('svg');
+    src: url(../BLADETEST/Fonts/KovacsLaser.woff2) format('woff2');
+    src: url(../BLADETEST/Fonts/KovacsLaser.svg) format('svg');
 }
 
 @font-face {
     font-family: 'Realpolitik';
-    src: url(../BladerunnerComplete/Fonts/Realpolitik.woff2) format('woff2');
-    src: url(../BladerunnerComplete/Fonts/Realpolitik.svg) format('svg');
+    src: url(../BLADETEST/Fonts/Realpolitik.woff2) format('woff2');
+    src: url(../BLADETEST/Fonts/Realpolitik.svg) format('svg');
 }
 
 @font-face {
     font-family: 'RealpolitikBold';
-    src: url(../BladerunnerComplete/Fonts/RealpolitikBold.woff2) format('woff2');
-    src: url(../BladerunnerComplete/Fonts/RealpolitikBold.svg) format('svg');
+    src: url(../BLADETEST/Fonts/RealpolitikBold.woff2) format('woff2');
+    src: url(../BLADETEST/Fonts/RealpolitikBold.svg) format('svg');
 }
 
 @font-face {
     font-family: 'RealpolitikSemiBold';
-    src: url(../BladerunnerComplete/RealpolitikSemiBold.woff2) format('woff2');
-    src: url(../BladerunnerComplete/RealpolitikSemiBold.svg) format('svg');
+    src: url(../BLADETEST/RealpolitikSemiBold.woff2) format('woff2');
+    src: url(../BLADETEST/RealpolitikSemiBold.svg) format('svg');
 }
 
 /*___________________________________*/
@@ -48,7 +48,7 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../BladerunnerComplete/Images/Backdrop.png');
+    background-image: url('../BLADETEST/Images/Backdrop.png');
 
 }
 
